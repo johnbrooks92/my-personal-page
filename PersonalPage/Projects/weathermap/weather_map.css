@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+.heading{
+    width: 100%;
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    color: #090103;
+    border: 5px solid #f1a50c;
+    flex-direction: column;
+}
+#title{
+    font-size: 35px;
+}
+.upperSection{
+    color: #167491;
+    font-size: 22px;
+}
+.details{
+    font-size: 12px;
+}
+.weekday{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #97e382;
+}
+.weatherSection{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    height: 100vh;
+    flex-direction: column;
+    color: #0fe5be;
+    font-size: 25px;
+    align-items: center;
+    overflow: scroll;
+}
+#map{
+    width: 100%;
+    height: 50vh;
+    border: 5px solid #ea4713;
+}
+.weeklyWeatherForecast{
+    width: 75%;
+    height: 85%;
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a2a72;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ea4713;
+    border-radius: 15px;
+}
+#timeLabel{
+    font-size: 15px;
+}
+span{
+    font-size: 15px;
+}
+
+@media screen and (min-width: 798px){
+    #title{
+        font-size: 35px;
+    }
+    .upperSection{
+        font-size: 14px;
+    }
+    .heading{
+        flex-direction: row;
+        height: 10vh;
+    }
+    .weatherSection{
+        flex-direction: row;
+        height: 40vh;
+        overflow: auto;
+        flex-wrap: wrap;
+    }
+    .clock{
+        height: 30%;
+    }
+    .timeSection{
+        height: 6vh;
+    }
+    #timeLabel{
+        font-size: 16px;
+    }
+    #time{
+        font-size: 20px;
+    }
+    .weeklyWeatherForecast{
+        width: 25%;
+        margin: auto 0;
+    }
+    .description{
+        font-size: 12px;
+    }
+    span{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1000px){
+    #title{
+        font-size: 75px;
+    }
+    .weatherSection{
+        padding: 0 5%;
+    }
+    .description{
+        font-size: 10px;
+    }
+    .descriptionHead{
+        margin-bottom: -.4em;
+    }
+    span{
+        font-size: 14px;
+    }
+    .weeklyWeatherForecast{
+        width: calc(100%/9);
+        margin: auto 0;
+    }
+    #time{
+        font-size: 18px;
+    }
+    #timeLabel{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 1380px){
+    #title{
+        font-size: 75px;
+    }
+    .weatherSection{
+        padding: 0 1%;
+    }
+    .upperSection{
+        font-size: 18px;
+    }
+    #time{
+        font-size: 22px;
+    }
+}
