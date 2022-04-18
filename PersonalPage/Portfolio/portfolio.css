@@ -1,0 +1,191 @@
+body {
+    color: #cef3f3;
+    background-color: #000000 !important;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2.5% 15%;
+}
+
+.projectTitle, .projectInfo, .bar, .projectInfo p {
+    margin: 1%;
+    padding: 1%;
+}
+
+.text-center {
+    margin: auto;
+    width: 60%;
+    color: #4dc5e7 !important;
+}
+
+.text-center h1 {
+    margin: auto;
+    width: 60%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 75%;
+    color: #cef3f3;
+    font-size: xx-small;
+    background-color: #0e0d11 !important;
+    border-radius: 1%;
+    box-shadow: -1rem 0 3rem #43afd7;
+    transition: 0.4s ease-out;
+    position: relative;
+    margin: 1%;
+    padding: 1%;
+}
+
+.card:not(:first-child) {
+    margin-left: -5%;
+}
+
+.card:hover {
+    transform: translateY(-2%);
+    transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+    position: relative;
+    left: 50%;
+    transition: 0.4s ease-out;
+}
+
+.title {
+    color: #4dc5e7;
+    font-weight: 300;
+    position: absolute;
+    left: 5%;
+    top: 1.5%;
+}
+
+.bar {
+    position: absolute;
+    top: 8%;
+    left: 65%;
+    height: 3%;
+    width: 30%;
+    align-items: end;
+}
+
+.emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+}
+
+.filledbar {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    width: 0;
+    height: 100%;
+    background-color: #ffffb5;
+    background-image: linear-gradient(315deg, #ffffb5 0%, #247ba0 74%);
+    transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+.card:hover .projectTitle h5 {
+    color: goldenrod !important;
+}
+
+.circle {
+    position: absolute;
+    top: 15%;
+    left: calc(50% - 60px);
+}
+
+.stroke {
+    stroke: rgba(140, 204, 238, 0.58);
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+}
+
+svg {
+    fill: #17141d;
+    stroke-width: 0.2%;
+}
+
+.card:hover .stroke {
+    stroke: rgb(245, 197, 7);
+    stroke-dashoffset: 10;
+    transition: 0.6s ease-out;
+}
+
+@media screen and (max-width: 1200px) {
+    .projectInfo {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .projectInfo {
+        font-size: xx-small;
+    }
+
+    .bar {
+        position: absolute;
+        top: 88%;
+        left: 80%;
+        height: 3%;
+        width: 15%;
+        align-items: end;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projectInfo {
+        font-size: xx-small;
+    }
+
+    .projectTitle h5 {
+        font-size: small;
+    }
+
+    .bar {
+        position: absolute;
+        top: 88%;
+        left: 65%;
+        height: 3%;
+        width: 30%;
+        align-items: end;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .projectInfo {
+        display: none;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    .bar {
+        position: absolute;
+        top: 40%;
+        left: 65%;
+        height: 3%;
+        width: 30%;
+        align-items: end;
+    }
+}
