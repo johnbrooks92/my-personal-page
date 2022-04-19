@@ -76,10 +76,10 @@ solutionsObject.solutions.forEach(res => {
     var desc = document.createElement("p");
     var typing = document.createElement("p");
     var author = document.createElement("p");
-    card.appendChild(info);
     info.appendChild(desc);
     info.appendChild(typing);
     info.appendChild(author);
+    card.appendChild(info);
     desc.insertAdjacentHTML('beforeend', descrip);
     typing.insertAdjacentHTML('beforeend', projectType);
     author.insertAdjacentHTML('beforeend', creator);
@@ -91,49 +91,8 @@ solutionsObject.solutions.forEach(res => {
     var filledbar = document.createElement("filledbar");
     filledbar.className = "filledbar";
 
-    var a = document.createElement("a");
-    a.href = route;
-    a.appendChild(card);
-    var deck = document.createElement("div");
-    deck.className = "col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4";
-    deck.appendChild(card);
-    var deckBox = document.createElement("div");
-    deckBox.className = "col-3";
-    deckBox.appendChild(deck);
-    var deckBoxContainer = document.createElement("div");
-    deckBoxContainer.className = "container-fluid row";
-    deckBoxContainer.appendChild(deckBox);
-    var body = document.getElementById("body");
-    body.insertAdjacentHTML('beforeend', projectName);
+    card.href = route;
+    var deck = document.getElementById("deck");
+    deck.insertAdjacentElement('beforeend', card);
 });
 
-// <div className="container-fluid row">
-//
-//     <div className="col-3">
-//         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4" id="deck">
-//
-//         </div>
-//     </div>
-// </div>
-
-// var input = document.getElementById("btn");
-// var inputVal = "";
-// if (input) {
-//     inputVal = input.value;
-// }
-// <a href="@project.Route" style="text-decoration:none" target="_blank">
-//     <div className="card">
-//         <div className="projectTitle">
-//             <h5 className="title">@project.Name</h5>
-//         </div>
-//         <div className="projectInfo">
-//             <p>@project.Description</p>
-//             <p>@project.Type</p>
-//             <p>Developers: @project.Creator</p>
-//         </div>
-//         <div className="bar">
-//             <div className="emptybar"></div>
-//             <div className="filledbar"></div>
-//         </div>
-//     </div>
-// </a>
