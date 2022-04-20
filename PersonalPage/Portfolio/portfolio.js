@@ -1,6 +1,5 @@
-
 const solutionsObject = {
-  "solutions":
+    "solutions":
         [
             {
                 "route": "https://sahelpinghands.org",
@@ -11,7 +10,7 @@ const solutionsObject = {
                 "solutionId": "1"
             },
             {
-                "route": "",
+                "route": "../Projects/weathermap/weather_map.html",
                 "projectName": "WeatherNova",
                 "description": "Weather app made using API calls to the OpenWeatherMap API; Renders instant 7-day forecast upon location selection.",
                 "projectType": "API Calls and MapRendering",
@@ -19,31 +18,31 @@ const solutionsObject = {
                 "solutionId": "2"
             },
             {
+                "route": "../Projects/movie-app/index.html",
+                "projectName": "Six Degrees of Sandler",
+                "description": "API Requests using IMDB to enable CRUD, Search functionality within local database.",
+                "projectType": "API/Querying Functionality",
+                "creator": "John Brooks, Christian Parker",
+                "solutionId": "3"
+            },
+            {
+                "route": "../Projects/nemesis-engage-2/index.html",
+                "projectName": "NE: 2",
+                "description": "Turn-based fighting system demo using HTML, CSS, JS and jQuery. Expanded roster from 2 to 30 characters utilizing JSON object for enhanced fighting mechanics.",
+                "projectType": "Fully Static Video Game",
+                "creator": "John Brooks",
+                "solutionId": "4"
+            },
+            {
                 "route": "https://github.com/SFW-FreeDevelopment/LordOfFrames",
                 "projectName": "Lord Of Frames",
                 "description": "Bot created for use in Discord Server using web API via .NET 6/C# and MongoDB. Outputs instant data responses for real-time command requests.",
                 "projectType": "System Programming",
                 "creator": "Christopher Plummer, John Brooks",
-                "solutionId": "3"
-            },
-            {
-                "route": "",
-                "projectName": "Six Degrees of Sandler",
-                "description": "API Requests using IMDB to enable CRUD, Search functionality within local database.",
-                "projectType": "API/Querying Functionality",
-                "creator": "John Brooks, Christian Parker",
-                "solutionId": "4"
-            },
-            {
-                "route": "",
-                "projectName": "NE: 2",
-                "description": "Turn-based fighting system demo using HTML, CSS, JS and jQuery. Expanded roster from 2 to 30 characters utilizing JSON object for enhanced fighting mechanics.",
-                "projectType": "Fully Static Video Game",
-                "creator": "John Brooks",
                 "solutionId": "5"
             },
             {
-                "route": "",
+                "route": "../Projects/coffee-project/index.html",
                 "projectName": "Boom! Roasted",
                 "description": "Coffee Ordering Project. Michael Scott-themed.",
                 "projectType": "Static Ordering Functionality",
@@ -90,9 +89,15 @@ solutionsObject.solutions.forEach(res => {
     emptybar.className = "emptybar";
     var filledbar = document.createElement("filledbar");
     filledbar.className = "filledbar";
+    bar.appendChild(emptybar);
+    bar.appendChild(filledbar);
+    card.appendChild(bar);
 
-    card.href = route;
+    var a = document.createElement("a");
+    a.href = route;
+    a.target = '_blank';
+    a.appendChild(card);
     var deck = document.getElementById("deck");
-    deck.insertAdjacentElement('beforeend', card);
+    deck.insertAdjacentElement('beforeend', a);
 });
 
