@@ -42,7 +42,7 @@ const solutionsObject = {
                 "solutionId": "5"
             },
             {
-                "route": "../Projects/coffee-project/index.html",
+                "route": "../Projects/coffee-app/index.html",
                 "projectName": "Boom! Roasted",
                 "description": "Coffee Ordering Project. Michael Scott-themed.",
                 "projectType": "Static Ordering Functionality",
