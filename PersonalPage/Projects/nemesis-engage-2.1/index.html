@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nemesis Engage 2</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon-img.png"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!--Opening Clips with Audio; Need to include keyup to skip-->
+<!--<div id="openingMontage"></div>-->
+
+<!--Where game should start upon searching URL-->
+<div id="startupScreen">
+    <h2>Welcome to Nemesis: Engage! </h2>
+    <h2>Copyright Disclaimer: I do not own any of the media seen within this game.</h2>
+    <h2>Press Enter to Begin!</h2>
+    <h1>Featuring</h1>
+    <h5>Press "S" to Skip Video</h5>
+</div>
+
+
+<!--Should so entire selection of game modes-->
+<!--<div id="mainMenu"></div>-->
+
+<!--UpperTextBox characterSelectScreen-->
+<div id="topRow">
+    <h2>CHARACTER SELECT</h2>
+    <h4>Player 1 must select before Player 2</h4>
+</div>
+
+<!--Character/Stage Select Screen for ALL GAME MODES-->
+<div id="characterSelectScreen"></div>
+<!--<div id="stageSelectScreen"></div>-->
+
+<!--Loading Screen between character select and battle, will need a nice aesthetic-->
+<!--<div id="loadingFightScreen"></div>-->
+
+
+<!--Needs to render the stored data of character select as the active characters in battle-->
+<div id="battleScreen"></div>
+
+
+<!--Return to Main Menu, Character Select or have Rematch based on question at end of battleScreen-->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

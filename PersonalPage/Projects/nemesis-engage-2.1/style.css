@@ -1,0 +1,258 @@
+body {
+    background: black;
+    cursor: url('img/ani1244.cur'), auto;
+    line-height: 1;
+}
+
+.Dragonball, .DC, .Naruto, .StarWars, .Transformers, .YuYu, .Academia, .Jack, .Jujutsu {
+    padding: 5px;
+    margin: 5px;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+    height: 360px;
+    width: 19%;
+    font-family: 'Goldman', cursive;
+    font-size: small;
+    color: #32cd32;
+    flex-wrap: wrap;
+    display: inline-flex;
+    justify-content: space-evenly;
+    border: 2px groove #32cd32;
+}
+
+.Dragonball:hover, .DC:hover, .Naruto:hover, .StarWars:hover, .Transformers:hover, .YuYu:hover, .Academia:hover, .Jack:hover, .Jujutsu:hover {
+    padding: 5px;
+    margin: 5px;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+    height: 360px;
+    width: 19%;
+    font-family: 'Goldman', cursive;
+    font-size: medium;
+    color: #bb4ec7;
+    outline: 1px;
+    outline-color: black;
+    flex-wrap: wrap;
+    display: inline-flex;
+    justify-content: space-evenly;
+    border: 2px groove #470e94;
+}
+
+.charSelectImg {
+    display: grid;
+    float: top;
+    height: 200px;
+    width: 180px;
+    /*height: 200px;*/
+    /*width: 70%;*/
+    margin-bottom: 1px;
+}
+
+#p1ImageDiv, #p2ImageDiv {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 2px groove #32cd32;
+    border-radius: 50%;
+    background-image: url("img/hover-lightning.gif");
+}
+
+#p1ImageDiv img, #p2ImageDiv img {
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+}
+
+div, h1 {
+    display: none;
+}
+
+h2 {
+    font-family: 'Goldman', cursive;
+    font-size: xxx-large;
+    color: #32cd32;
+}
+
+#startupScreen {
+    display: block;
+    font-family: 'Goldman', cursive;
+    color: #32cd32;
+    text-align: center;
+    align-items: center;
+    height: 45rem;
+    width: 90rem;
+    padding-top: 15rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-size: cover;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#startupScreen h1, h5 {
+    display: none;
+}
+
+#startupScreen h5 {
+    margin-top: 30%;
+    text-align: bottom;
+}
+
+#battleScreen {
+    height: 47.5rem;
+    width: 90rem;
+    display: none;
+    font-family: 'Goldman', cursive;
+    font-size: larger;
+    background-image: url("img/tenkaichi-stage.jpeg");
+    justify-content: space-around;
+}
+
+#battle1 h2, #battle2 h2 {
+    font-size: large;
+}
+
+#battle1 {
+    height: 47.5rem;
+    width: 23rem;
+    text-align: center;
+    border: 2px solid #32cd32;
+    background-color: rgba(176, 158, 158, 0.75);
+    background-blend-mode: luminosity;
+}
+
+#battle2 {
+    height: 47.5rem;
+    width: 23rem;
+    text-align: center;
+    border: 2px solid #32cd32;
+    background-color: rgba(176, 158, 158, 0.75);
+    background-blend-mode: luminosity;
+}
+
+btn {
+    border: 1px solid #32cd32;
+    border-radius: 1.25rem;
+    color: #60dfcd;
+    background-image: url("img/hover-reg-moves.gif");
+    margin-outside: 5px;
+}
+
+#p1MoveUlt {
+    border: 1px solid #32cd32;
+    border-radius: 1.25rem;
+    color: #60dfcd;
+    background-image: url("img/hover-ultimate.gif");
+    margin-outside: 5px;
+}
+
+#p2MoveUlt {
+    border: 1px solid #32cd32;
+    border-radius: 1.25rem;
+    color: #60dfcd;
+    background-image: url("img/hover-ultimate.gif");
+    margin-outside: 5px;
+}
+
+#topRow {
+    height: 100%;
+    width: 100%;
+    font-family: 'Goldman', cursive;
+    color: #32cd32;
+}
+
+.charSelBtn1, .charSelBtn2 {
+    border: 1px solid #32cd32;
+    border-radius: 1.25rem;
+    color: #60dfcd;
+}
+
+.hpBorder {
+    width: 18.75rem;
+    height: .75rem;
+    border: 3px solid #ffd700;
+    margin-left: 2rem;
+}
+
+.hpBar {
+    width: 18.75rem;
+    height: .75rem;
+    background-color: #00b712;
+    background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+}
+
+.kiBorder {
+    width: 18.75rem;
+    height: .75rem;
+    border: 3px solid #ffd700;
+    margin-left: 2rem;
+}
+
+.kiBar {
+    width: 9.375rem;
+    height: .75rem;
+    background-color: #60dfcd;
+    background-image: linear-gradient(315deg, #60dfcd 0%, #1e9afe 74%);
+}
+
+#p1SenzuBtn, #p2SenzuBtn {
+    background-image: url("img/senzu-bg.gif");
+}
+
+#p1AuraRecBtn, #p2AuraRecBtn {
+    background-image: url("img/ki-gather.gif");
+}
+
+#textBox {
+    height: 23.75rem;
+    width: 30rem;
+    color: #32cd32;
+    font-size: small;
+    overflow: scroll;
+    border: 2px solid #32cd32;
+    background-color: rgba(33, 30, 30, 0.75);
+    background-blend-mode: luminosity;
+}
+
+#textBox h2 {
+    text-align: end;
+}
+
+@media screen and (max-width: 1596px) {
+    #startupScreen {
+        height: 37.5rem;
+        width: 75rem
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    #startupScreen {
+        height: 30rem;
+        width: 60rem
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #startupScreen {
+        height: 24rem;
+        width: 48rem
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #startupScreen {
+        height: 18rem;
+        width: 36rem
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #startupScreen {
+        height: 12rem;
+        width: 24rem
+    }
+}
