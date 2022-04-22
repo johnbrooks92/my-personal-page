@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Boom! Roasted</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--Beginning of Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light color">
+    <a class="navbar-brand" id="nav-boom" href="#">Boom! Roasted!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--Navbar Content-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Locations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <h4>Inside Texas</h4>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Riverwalk</a>
+                    <a class="dropdown-item" href="#">Thousand Oaks</a>
+                    <a class="dropdown-item" href="#">Austin</a>
+                    <div class="dropdown-divider"></div>
+                    <h4>Outside of Texas</h4>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Orlando</a>
+                    <a class="dropdown-item" href="#">Seattle</a>
+                    <a class="dropdown-item" href="#">San Francisco</a>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="email" placeholder="Your E-mail Address" aria-label="Search"
+                   id="emailInput">
+            <button class="btn-outline-success my-2 my-sm-0" id="subscribe" type="submit">Subscribe to Newsletter!
+            </button>
+        </form>
+    </div>
+</nav>
+<!--End of Navbar/Beginning of Main Container-->
+<main class="container text-center">
+    <!--Beginning of Carousel Jumbotron-->
+    <div class="jumbotron jumbotron-fluid p-2 jumboCarousel text-center" id="jumbo">
+        <div class="container p-2 ">
+            <div id="carouselSlides" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <h1 class="store">Welcome to Boom! Roasted.</h1>
+                    <p class="lead">A subdivision of the Michael Scott Paper Company.</p>
+                    <div class="carousel-item active">
+                        <img src="img/pexels-igor-haritanovich-1695052.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pexels-afta-putta-gunawan-683039.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pexels-photo-374147.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pexels-photo-131058.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Carousel Jumbotron-->
+
+    <!--Beginning of Container for Search Bar-->
+    <div class="container text-center">
+        <label for="searchBar"></label>
+        <input type="text" id="searchBar">
+        <label for="roastSelect"></label>
+        <select name="roastSelect" id="roastSelect">
+            <option>Dark</option>
+            <option>Medium</option>
+            <option>Light</option>
+            <option selected>All Roasts</option>
+        </select>
+    </div>
+    <div class="search-container"></div>
+    <!--End of Container for Search Bar-->
+
+    <!--Begin Container for Cards-->
+    <div class="container-fluid coffee-card-container">
+        <!--Card #1 - Dark-->
+        <div class="card mt-2 coffee-card bg-transparent" data-roast="dark">
+            <img src="img/pexels-photo-darkroast.jpeg" class="card-img-top roast-img" alt="...">
+            <div class="card-body">
+                <h5 class="card-title roast" id="dark-roast">Dark</h5>
+                <p class="cardDescription">Dark roast coffee is a dark brown color and often has an oily surface. These
+                    coffees have a low acidity, heavy body, and tend to reveal deeper, darker flavors.</p>
+                <a class="btn select-roast-btn" id="dark-btn">Select Dark Roast</a>
+                <div class="container-fluid coffee-select text-left" id="coffees" data-coffeeContent="dark"></div>
+            </div>
+        </div>
+        <!--Card #2 - Medium-->
+        <div class="card mt-2 coffee-card bg-transparent" data-roast="medium">
+            <img src="img/pexels-photo-mediumroast.jpeg" class="card-img-top roast-img" alt="...">
+            <div class="card-body">
+                <h5 class="card-title roast" id="medium-roast">Medium</h5>
+                <p class="cardDescription">Medium roast coffee is a brown color and rarely has an oily surface. These
+                    coffees have a medium acidity and body, as well as a rounded flavor profile.</p>
+                <a class="btn select-roast-btn" id="medium-btn">Select Medium Roast</a>
+                <div class="container-fluid coffee-select text-left" data-coffeeContent="medium"></div>
+            </div>
+        </div>
+        <!--Card #3 -Light-->
+        <div class="card mt-2 coffee-card bg-transparent" data-roast="light">
+            <img src="img/pexels-photo-lightroast.jpeg" class="card-img-top roast-img" alt="...">
+            <div class="card-body">
+                <h5 class="card-title roast" id="light-roast">Light</h5>
+                <p class="cardDescription">Light roast coffee is a light brown color and has no oil on the surface of
+                    the beans. These coffees have a crisp acidity, a mellow body, and bright flavors.</p>
+                <a class="btn select-roast-btn" id="light-btn">Select Light Roast</a>
+                <div class="container-fluid coffee-select text-left" data-coffeeContent="light"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--End Container for Cards-->
+
+    <!--Begin Modal For Ordering-->
+    <div class="modal fade" id="quantity" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <h2 id="coffeeName"></h2>
+                <label for="userQty" id="qty">Quantity: </label>
+                <input type="text" id="userQty">
+                <div class="modal-body d-flex flex-column">
+                    <label for="size" id="sizeLabel">Select Size: </label>
+                    <select name="sizeSelect" id="size" class="mb-3">
+                        <option>Slept 8-10 hrs (Small)</option>
+                        <option>Slept 5-7 hrs (Medium)</option>
+                        <option>Slept 0-4 hrs (Large)</option>
+                        <option>What Even Is Sleep? (X-Large)</option>
+                    </select>
+                    <label for="additionalComments">Special Instructions</label>
+                    <textarea name="additionalComments" id="additionalComments" cols="30" rows="5"></textarea>
+                    <button class="btn add-to-cart-btn align-self-end mt-3" id="cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Modal for Ordering-->
+
+    <!-- Begin Modal For Email-->
+    <div class="modal fade" id="newsletter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">An Email Has Been Sent To</h5>
+                    <p id="userEmail"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Modal For Email-->
+
+    <!--Begin Checkout Modal-->
+    <div class="modal fade" id="purchased" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="bought">You Bought: </h5>
+                    <p id="itemsBought"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="purchaseBtn">Complete
+                        Purchase
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Checkout Modal-->
+
+    <!--Begin "Completed Order" Modal-->
+    <div class="modal fade" id="gif" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Your Order Has Been Placed</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/boom-roasted-checkout.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End "Completed Order" Modal-->
+
+
+    <!--Begin Cart-->
+    <label for="cart"><a id="checkout"><i class="fas fa-shopping-cart"></i></a></label>
+    <select id="cart"></select>
+    <!--End Cart-->
+</main>
+<!--End of Main Container-->
+
+<!--Required Script-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/54576956ff.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
