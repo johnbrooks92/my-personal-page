@@ -18,7 +18,7 @@ const solutionsObject = {
                 "solutionId": "2"
             },
             {
-                "route": "../Projects/movie-app/index.html",
+                "route": "../Projects/movie-project/index.html",
                 "projectName": "Six Degrees of Sandler",
                 "description": "API Requests using IMDB to enable CRUD, Search functionality within local database.",
                 "projectType": "API/Querying Functionality",
