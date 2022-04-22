@@ -26,8 +26,8 @@ const solutionsObject = {
                 "solutionId": "3"
             },
             {
-                "route": "../Projects/nemesis-engage-2/index.html",
-                "projectName": "NE: 2",
+                "route": "../Projects/nemesis-engage-2.1/index.html",
+                "projectName": "Nemesis Engage 2.1",
                 "description": "Turn-based fighting system demo using HTML, CSS, JS and jQuery. Expanded roster from 2 to 30 characters utilizing JSON object for enhanced fighting mechanics.",
                 "projectType": "Fully Static Video Game",
                 "creator": "John Brooks",
