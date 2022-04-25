@@ -76,15 +76,15 @@ $('body').keydown(function (event) {
         var rndInt = randomIntFromInterval(1, 4)
 
         if (rndInt == 1) {
-            myAudio = new Audio('audio/montage-opening-1.mp3');
+            myAudio = new Audio('audio/OddFuture.mp3');
             myAudio.play();
             myAudio.volume = 0.60;
         } else if (rndInt == 2) {
-            myAudio = new Audio('audio/aot-op-2.mp3');
+            myAudio = new Audio('audio/OddFuture.mp3');
             myAudio.play();
             myAudio.volume = 0.60;
         } else if (rndInt == 3) {
-            myAudio = new Audio('audio/montage-opening-3.mp3');
+            myAudio = new Audio('audio/OddFuture.mp3');
             myAudio.play();
             myAudio.volume = 0.60;
         } else if (rndInt == 4) {
