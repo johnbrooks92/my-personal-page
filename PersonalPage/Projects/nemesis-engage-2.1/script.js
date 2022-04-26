@@ -842,7 +842,7 @@ rosterObject.fighters.forEach(res => {
             $('.StarWars').css('background-image', 'url(img/star-wars-bg.jpg');
         }
         if (res.series == "Transformers") {
-            $('.Transformers').css('background-image', 'url(img/transformers-bg.jpeg');
+            $('.Transformers').css('background-image', 'url(img/autodecept-logo.jpeg');
             $('.Transformers').css('background-size', 'cover');
         }
         if (res.series == "YuYu Hakusho") {
