@@ -100,6 +100,12 @@ $('body').keydown(function (event) {
             $('#startupScreen').css('background-image', 'url(img/montage/frieza-montage-1.gif');
         }, 3750);
         setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/starscream-red.webp');
+        }, 4850);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/anakin-clone-wars.gif');
+        }, 5950);
+        setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/aku-montage-1.gif');
         }, 7000);
         setTimeout(function () {
@@ -124,6 +130,9 @@ $('body').keydown(function (event) {
             $('#startupScreen').css('background-image', 'url(img/montage/itadori-b-w.gif');
         }, 19000);
         setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/ss-goku.webp');
+        }, 22000);
+        setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/deku-vs-bakugo.gif');
         }, 23250);
         setTimeout(function () {
@@ -142,11 +151,17 @@ $('body').keydown(function (event) {
             $('#startupScreen').css('background-image', 'url(img/montage/hiei-montage-1.gif');
         }, 36750);
         setTimeout(function () {
-            $('#startupScreen').css('background-image', 'url(img/montage/megatron-montage-1.gif');
+            $('#startupScreen').css('background-image', 'url(img/montage/sensui-yusuke.gif');
         }, 37800);
         setTimeout(function () {
-            $('#startupScreen').css('background-image', 'url(img/montage/gojo-sukuna.gif');
+            $('#startupScreen').css('background-image', 'url(img/montage/megatron.webp');
+        }, 39750);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/gojo-red.gif');
         }, 42000);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/yoko-kurama.gif');
+        }, 44000);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/starscream-montage-1.webp');
         }, 45000);
@@ -161,16 +176,28 @@ $('body').keydown(function (event) {
         }, 48000);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/samurai-jack-montage-1.gif');
-        }, 50250);
+        }, 49000);
         setTimeout(function () {
-            $('#startupScreen').css('background-image', 'url(img/montage/yusuke-montage-2.gif');
-        }, 52500);
+            $('#startupScreen').css('background-image', 'url(img/montage/freiza-god.gif');
+        }, 49750);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/bakugo-powering.webp');
+        }, 50500);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/ahsoka.gif');
+        }, 51750);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/megumi-fushiguro.gif');
-        }, 55750);
+        }, 52500);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/yusuke-montage-2.gif');
+        }, 54750);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/naruto-montage-1.webp');
         }, 58000);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/divergent-itadori.webp');
+        }, 59000);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/sasuke-montage-1.webp');
         }, 60000);
@@ -178,8 +205,23 @@ $('body').keydown(function (event) {
             $('#startupScreen').css('background-image', 'url(img/montage/kurama-montage-1.gif');
         }, 62000);
         setTimeout(function () {
-            $('#startupScreen').css('background-image', 'url(img/montage/kuwabara-montage-1.gif');
+            $('#startupScreen').css('background-image', 'url(img/montage/kurama-montage-1.gif');
+        }, 63000);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/obi-wan.gif');
         }, 64000);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/goku-and-vegeta.webp');
+        }, 65000);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/kuwabara-montage-1.webp');
+        }, 65750);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/megumi.gif');
+        }, 66500);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/sasuke-and-itachi.gif');
+        }, 67250);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/jack-vs-aku-montage-1.gif');
         }, 68000);
@@ -196,34 +238,52 @@ $('body').keydown(function (event) {
             $('#startupScreen').css('background-image', 'url(img/montage/sensui-montage-1.gif');
         }, 74000);
         setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/todoroki-fire-ice.webp');
+        }, 74750);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/majin-vegeta.webp');
+        }, 76200);
+        setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/yusuke-montage-1.webp');
         }, 77000);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/batman-vs-superman.gif');
+        }, 78000);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/anbu-itachi.gif');
+        }, 79000);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/deku-montage-1.webp');
         }, 80000);
         setTimeout(function () {
-            $('#startupScreen').css('background-image', 'url(img/montage/goku-warmup.gif');
-        }, 81500);
+            $('#startupScreen').css('background-image', 'url(img/montage/gojo-sukuna.gif');
+        }, 80500);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/vader-montage-1.gif');
-        }, 83750);
+        }, 81500);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/naruto-kurama.gif');
+        }, 84600);
+        setTimeout(function () {
+            $('#startupScreen').css('background-image', 'url(img/montage/goku-warmup.gif');
+        }, 86700);
 
 
         timeoutCancel1 = setTimeout(function () {
             $('#startupScreen').css({'display': 'none'});
-        }, 90000);
+        }, 89000);
         timeoutCancel2 = setTimeout(function () {
             myAudio.pause();
         }, 90250);
         timeoutCancel3 = setTimeout(function () {
             $('#topRow').css({'display': 'block'});
-        }, 90000);
+        }, 89000);
         timeoutCancel4 = setTimeout(function () {
             $('#characterSelectScreen').css({'display': 'block'});
-        }, 90000);
+        }, 89000);
         timeoutCancel5 = setTimeout(function () {
             $('*').off('keyup keydown keypress');
-        }, 90000);
+        }, 89000);
     } else if (inputCode == skipCode) {
         myAudio.pause();
         $('#startupScreen').css({'display': 'none'});
