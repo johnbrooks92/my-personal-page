@@ -143,13 +143,13 @@ $('body').keydown(function (event) {
         }, 29500);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/naruto-vs-sasuke-montage-1.gif');
-        }, 32500);
+        }, 32000);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/optimus-prime-montage-1.webp');
-        }, 35000);
+        }, 34750);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/hiei-montage-1.gif');
-        }, 36750);
+        }, 36500);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/sensui-yusuke.gif');
         }, 37800);
@@ -212,19 +212,19 @@ $('body').keydown(function (event) {
         }, 64000);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/goku-and-vegeta.webp');
-        }, 65000);
+        }, 64750);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/kuwabara-montage-1.webp');
-        }, 65750);
+        }, 65500);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/megumi.gif');
-        }, 66500);
+        }, 66250);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/sasuke-and-itachi.gif');
         }, 67250);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/jack-vs-aku-montage-1.gif');
-        }, 68000);
+        }, 68250);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/kakashi-montage-1.gif');
         }, 69000);
@@ -236,7 +236,7 @@ $('body').keydown(function (event) {
         }, 72000);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/sensui-montage-1.gif');
-        }, 74000);
+        }, 73500);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/todoroki-fire-ice.webp');
         }, 74750);
@@ -260,7 +260,7 @@ $('body').keydown(function (event) {
         }, 80500);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/vader-montage-1.gif');
-        }, 81500);
+        }, 82000);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/naruto-kurama.gif');
         }, 84600);
