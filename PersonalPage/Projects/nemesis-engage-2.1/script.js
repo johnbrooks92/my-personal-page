@@ -191,7 +191,7 @@ $('body').keydown(function (event) {
         }, 52500);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/yusuke-montage-2.gif');
-        }, 54750);
+        }, 54650);
         setTimeout(function () {
             $('#startupScreen').css('background-image', 'url(img/montage/naruto-montage-1.webp');
         }, 58000);
