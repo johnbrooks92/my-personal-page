@@ -1201,8 +1201,8 @@ rosterObject.fighters.forEach(res => {
                     document.getElementById('battle2').style.pointerEvents = 'auto';
 
                     p1HPTotals = 1200
-                    var p1HPBar = (p1HPTotals / 1200) * 300;
-                    p1HP.style.width = p1HPBar + "px";
+                    var p1HPBar = (p1HPTotals / 12);
+                    p1HP.style.width = p1HPBar + "%";
                     var textBoxDiv = document.getElementById('textBox');
                     textBoxDiv.innerHTML += p1FighterName + " recovered health completely! <br>";
                     var p1SenzuBtn = document.getElementById('p1SenzuBtn');
@@ -1249,8 +1249,8 @@ rosterObject.fighters.forEach(res => {
                     } else if (p1KiTotals > 800) {
                         p1KiTotals = 1200;
                     }
-                    var p1KiBar = (p1KiTotals / 1200) * 300;
-                    p1Ki.style.width = p1KiBar + "px";
+                    var p1KiBar = (p1KiTotals / 12);
+                    p1Ki.style.width = p1KiBar + "%";
                     kiHeader1.textContent = 'KI ' + p1KiTotals + "/1200";
 
                     var textBoxDiv = document.getElementById('textBox');
@@ -2249,8 +2249,8 @@ rosterObject.fighters.forEach(res => {
                         document.getElementById('battle2').style.pointerEvents = 'none';
                         player2TurnCounter += 1;
                         p2HPTotals = 1200
-                        var p2HPBar = (p2HPTotals / 1200) * 300;
-                        p2HP.style.width = p2HPBar + "px";
+                        var p2HPBar = (p2HPTotals / 12);
+                        p2HP.style.width = p2HPBar + "%";
                         var textBoxDiv = document.getElementById('textBox');
                         textBoxDiv.innerHTML += player2Name + " recovered health completely! <br>";
                         var p2SenzuBtn = document.getElementById('p2SenzuBtn');
@@ -2295,8 +2295,8 @@ rosterObject.fighters.forEach(res => {
                             p2KiTotals = 1200
                         }
 
-                        var p2KiBar = (p2KiTotals / 1200) * 300;
-                        p2Ki.style.width = p2KiBar + "px";
+                        var p2KiBar = (p2KiTotals / 12);
+                        p2Ki.style.width = p2KiBar + "%";
                         kiHeader2.textContent = 'KI ' + p2KiTotals + "/1200";
 
 
@@ -2347,8 +2347,8 @@ rosterObject.fighters.forEach(res => {
 
                         //Ki Set Up
                         p1KiTotals -= 250;
-                        var P1KiBarWidth = (p1KiTotals / 1200) * 300;
-                        p1Ki.style.width = P1KiBarWidth + "px";
+                        var P1KiBarWidth = (p1KiTotals / 12);
+                        p1Ki.style.width = P1KiBarWidth + "%";
                         var kiHeader1 = document.getElementById("kiHeader1")
                         kiHeader1.textContent = 'KI ' + p1KiTotals + "/1200";
 
@@ -2395,8 +2395,8 @@ rosterObject.fighters.forEach(res => {
                             }, 5000);
                         }
 
-                        var P2HPBarWidth = (p2HPTotals / 1200) * 300;
-                        p2HP.style.width = P2HPBarWidth + "px";
+                        var P2HPBarWidth = (p2HPTotals / 12);
+                        p2HP.style.width = P2HPBarWidth + "%";
                         var hpHeader2 = document.getElementById("hpHeader2");
                         hpHeader2.textContent = 'HP ' + p2HPTotals + "/1200";
 
@@ -2428,8 +2428,8 @@ rosterObject.fighters.forEach(res => {
 
 //Ki Set Up
                         p1KiTotals -= 250;
-                        var P1KiBarWidth = (p1KiTotals / 1200) * 300;
-                        p1Ki.style.width = P1KiBarWidth + "px";
+                        var P1KiBarWidth = (p1KiTotals / 1200);
+                        p1Ki.style.width = P1KiBarWidth + "%";
                         var kiHeader1 = document.getElementById("kiHeader1")
                         kiHeader1.textContent = 'KI ' + p1KiTotals + "/1200";
 
@@ -2476,8 +2476,8 @@ rosterObject.fighters.forEach(res => {
                             }, 5000);
                         }
 
-                        var P2HPBarWidth = (p2HPTotals / 1200) * 300;
-                        p2HP.style.width = P2HPBarWidth + "px";
+                        var P2HPBarWidth = (p2HPTotals / 12);
+                        p2HP.style.width = P2HPBarWidth + "%";
                         var hpHeader2 = document.getElementById("hpHeader2");
                         hpHeader2.textContent = 'HP ' + p2HPTotals + "/1200";
 
@@ -2516,8 +2516,8 @@ rosterObject.fighters.forEach(res => {
 
                         //Ki Set Up
                         p1KiTotals -= 325;
-                        var P1KiBarWidth = (p1KiTotals / 1200) * 300;
-                        p1Ki.style.width = P1KiBarWidth + "px";
+                        var P1KiBarWidth = (p1KiTotals / 12);
+                        p1Ki.style.width = P1KiBarWidth + "%";
                         var kiHeader1 = document.getElementById("kiHeader1")
                         kiHeader1.textContent = 'KI ' + p1KiTotals + "/1200";
 
@@ -2565,8 +2565,8 @@ rosterObject.fighters.forEach(res => {
                         }
 
 
-                        var P2HPBarWidth = (p2HPTotals / 1200) * 300;
-                        p2HP.style.width = P2HPBarWidth + "px";
+                        var P2HPBarWidth = (p2HPTotals / 12);
+                        p2HP.style.width = P2HPBarWidth + "%";
                         var hpHeader2 = document.getElementById("hpHeader2");
                         hpHeader2.textContent = 'HP ' + p2HPTotals + "/1200";
 
@@ -2600,8 +2600,8 @@ rosterObject.fighters.forEach(res => {
 
                         //Ki Set Up
                         p1KiTotals -= 325;
-                        var P1KiBarWidth = (p1KiTotals / 1200) * 300;
-                        p1Ki.style.width = P1KiBarWidth + "px";
+                        var P1KiBarWidth = (p1KiTotals / 12);
+                        p1Ki.style.width = P1KiBarWidth + "%";
                         var kiHeader1 = document.getElementById("kiHeader1")
                         kiHeader1.textContent = 'KI ' + p1KiTotals + "/1200";
 
@@ -2650,8 +2650,8 @@ rosterObject.fighters.forEach(res => {
                         }
 
 
-                        var P2HPBarWidth = (p2HPTotals / 1200) * 300;
-                        p2HP.style.width = P2HPBarWidth + "px";
+                        var P2HPBarWidth = (p2HPTotals / 12);
+                        p2HP.style.width = P2HPBarWidth + "%";
                         var hpHeader2 = document.getElementById("hpHeader2");
                         hpHeader2.textContent = 'HP ' + p2HPTotals + "/1200";
 
@@ -2691,8 +2691,8 @@ rosterObject.fighters.forEach(res => {
 
                         //Ki Set Up
                         p1KiTotals -= 750;
-                        var P1KiBarWidth = (p1KiTotals / 1200) * 300;
-                        p1Ki.style.width = P1KiBarWidth + "px";
+                        var P1KiBarWidth = (p1KiTotals / 12);
+                        p1Ki.style.width = P1KiBarWidth + "%";
                         var kiHeader1 = document.getElementById("kiHeader1")
                         kiHeader1.textContent = 'KI ' + p1KiTotals + "/1200";
 
@@ -2741,8 +2741,8 @@ rosterObject.fighters.forEach(res => {
                         }
 
 
-                        var P2HPBarWidth = (p2HPTotals / 1200) * 300;
-                        p2HP.style.width = P2HPBarWidth + "px";
+                        var P2HPBarWidth = (p2HPTotals / 12)
+                        p2HP.style.width = P2HPBarWidth + "%";
                         var hpHeader2 = document.getElementById("hpHeader2");
                         hpHeader2.textContent = 'HP ' + p2HPTotals + "/1200";
 
@@ -2774,8 +2774,8 @@ rosterObject.fighters.forEach(res => {
 
                         //Ki Set Up
                         p1KiTotals -= 750;
-                        var P1KiBarWidth = (p1KiTotals / 1200) * 300;
-                        p1Ki.style.width = P1KiBarWidth + "px";
+                        var P1KiBarWidth = (p1KiTotals / 12);
+                        p1Ki.style.width = P1KiBarWidth + "%";
                         var kiHeader1 = document.getElementById("kiHeader1")
                         kiHeader1.textContent = 'KI ' + p1KiTotals + "/1200";
 
@@ -2824,8 +2824,8 @@ rosterObject.fighters.forEach(res => {
                         }
 
 
-                        var P2HPBarWidth = (p2HPTotals / 1200) * 300;
-                        p2HP.style.width = P2HPBarWidth + "px";
+                        var P2HPBarWidth = (p2HPTotals / 12);
+                        p2HP.style.width = P2HPBarWidth + "%";
                         var hpHeader2 = document.getElementById("hpHeader2");
                         hpHeader2.textContent = 'HP ' + p2HPTotals + "/1200";
 
@@ -2866,8 +2866,8 @@ rosterObject.fighters.forEach(res => {
 
                         //Ki Set Up
                         p1KiTotals -= 1000;
-                        var P1KiBarWidth = (p1KiTotals / 1200) * 300;
-                        p1Ki.style.width = P1KiBarWidth + "px";
+                        var P1KiBarWidth = (p1KiTotals / 12);
+                        p1Ki.style.width = P1KiBarWidth + "%";
                         var kiHeader1 = document.getElementById("kiHeader1")
                         kiHeader1.textContent = 'KI ' + p1KiTotals + "/1200";
 
@@ -2914,8 +2914,8 @@ rosterObject.fighters.forEach(res => {
                             }, 5000);
                         }
 
-                        var P2HPBarWidth = (p2HPTotals / 1200) * 300;
-                        p2HP.style.width = P2HPBarWidth + "px";
+                        var P2HPBarWidth = (p2HPTotals / 12);
+                        p2HP.style.width = P2HPBarWidth + "%";
                         var hpHeader2 = document.getElementById("hpHeader2");
                         hpHeader2.textContent = 'HP ' + p2HPTotals + "/1200";
 
@@ -2947,8 +2947,8 @@ rosterObject.fighters.forEach(res => {
 
                         //Ki Set Up
                         p1KiTotals -= 1000;
-                        var P1KiBarWidth = (p1KiTotals / 1200) * 300;
-                        p1Ki.style.width = P1KiBarWidth + "px";
+                        var P1KiBarWidth = (p1KiTotals / 12);
+                        p1Ki.style.width = P1KiBarWidth + "%";
                         var kiHeader1 = document.getElementById("kiHeader1")
                         kiHeader1.textContent = 'KI ' + p1KiTotals + "/1200";
 
@@ -2994,8 +2994,8 @@ rosterObject.fighters.forEach(res => {
                                 window.location.reload(true);
                             }, 5000);
                         }
-                        var P2HPBarWidth = (p2HPTotals / 1200) * 300;
-                        p2HP.style.width = P2HPBarWidth + "px";
+                        var P2HPBarWidth = (p2HPTotals / 12);
+                        p2HP.style.width = P2HPBarWidth + "%";
                         var hpHeader2 = document.getElementById("hpHeader2");
                         hpHeader2.textContent = 'HP ' + p2HPTotals + "/1200";
 
@@ -3062,8 +3062,8 @@ rosterObject.fighters.forEach(res => {
                         player2TurnCounter += 1;
                         //Ki Set Up
                         p2KiTotals -= 250;
-                        var P2KiBarWidth = (p2KiTotals / 1200) * 300;
-                        p2Ki.style.width = P2KiBarWidth + "px";
+                        var P2KiBarWidth = (p2KiTotals / 12);
+                        p2Ki.style.width = P2KiBarWidth + "%";
 
                         kiHeader2.textContent = 'KI ' + p2KiTotals + "/1200";
                         //Damage Calculator
@@ -3086,9 +3086,9 @@ rosterObject.fighters.forEach(res => {
                         }
 
 
-                        var P1HPBarWidth = (p1HPTotals / 1200) * 300;
+                        var P1HPBarWidth = (p1HPTotals / 12);
                         var p1HP = document.getElementById("p1Health");
-                        p1HP.style.width = P1HPBarWidth + "px";
+                        p1HP.style.width = P1HPBarWidth + "%";
                         var hpHeader1 = document.getElementById("hpHeader1");
                         hpHeader1.textContent = 'HP ' + p1HPTotals + "/1200";
 
@@ -3148,8 +3148,8 @@ rosterObject.fighters.forEach(res => {
                         player2TurnCounter += 1;
                         //Ki Set Up
                         p2KiTotals -= 250;
-                        var P2KiBarWidth = (p2KiTotals / 1200) * 300;
-                        p2Ki.style.width = P2KiBarWidth + "px";
+                        var P2KiBarWidth = (p2KiTotals / 12);
+                        p2Ki.style.width = P2KiBarWidth + "%";
                         kiHeader2.textContent = 'KI ' + p2KiTotals + "/1200";
                         //Damage Calculator
                         var damage = Math.round(75 * ((rosterObject.fighters[p2id - 1].atk) / (rosterObject.fighters[p1Uniqueid - 1].defend)));
@@ -3171,9 +3171,9 @@ rosterObject.fighters.forEach(res => {
                         }
 
 
-                        var P1HPBarWidth = (p1HPTotals / 1200) * 300;
+                        var P1HPBarWidth = (p1HPTotals / 12);
                         var p1HP = document.getElementById("p1Health");
-                        p1HP.style.width = P1HPBarWidth + "px";
+                        p1HP.style.width = P1HPBarWidth + "%";
                         var hpHeader1 = document.getElementById("hpHeader1");
                         hpHeader1.textContent = 'HP ' + p1HPTotals + "/1200";
 
@@ -3238,8 +3238,8 @@ rosterObject.fighters.forEach(res => {
                         player2TurnCounter += 1;
                         //Ki Set Up
                         p2KiTotals -= 325;
-                        var P2KiBarWidth = (p2KiTotals / 1200) * 300;
-                        p2Ki.style.width = P2KiBarWidth + "px";
+                        var P2KiBarWidth = (p2KiTotals / 12);
+                        p2Ki.style.width = P2KiBarWidth + "%";
                         kiHeader2.textContent = 'KI ' + p2KiTotals + "/1200";
 
                         //Damage Calculator
@@ -3261,9 +3261,9 @@ rosterObject.fighters.forEach(res => {
                             }, 5000);
                         }
 
-                        var P1HPBarWidth = (p1HPTotals / 1200) * 300;
+                        var P1HPBarWidth = (p1HPTotals / 12);
                         var p1HP = document.getElementById("p1Health");
-                        p1HP.style.width = P1HPBarWidth + "px";
+                        p1HP.style.width = P1HPBarWidth + "%";
                         var hpHeader1 = document.getElementById("hpHeader1");
                         hpHeader1.textContent = 'HP ' + p1HPTotals + "/1200";
 
@@ -3321,8 +3321,8 @@ rosterObject.fighters.forEach(res => {
                         player2TurnCounter += 1;
                         //Ki Set Up
                         p2KiTotals -= 325;
-                        var P2KiBarWidth = (p2KiTotals / 1200) * 300;
-                        p2Ki.style.width = P2KiBarWidth + "px";
+                        var P2KiBarWidth = (p2KiTotals / 12);
+                        p2Ki.style.width = P2KiBarWidth + "%";
                         kiHeader2.textContent = 'KI ' + p2KiTotals + "/1200";
 
                         //Damage Calculator
@@ -3344,9 +3344,9 @@ rosterObject.fighters.forEach(res => {
                             }, 5000);
                         }
 
-                        var P1HPBarWidth = (p1HPTotals / 1200) * 300;
+                        var P1HPBarWidth = (p1HPTotals / 12);
                         var p1HP = document.getElementById("p1Health");
-                        p1HP.style.width = P1HPBarWidth + "px";
+                        p1HP.style.width = P1HPBarWidth + "%";
                         var hpHeader1 = document.getElementById("hpHeader1");
                         hpHeader1.textContent = 'HP ' + p1HPTotals + "/1200";
 
@@ -3415,8 +3415,8 @@ rosterObject.fighters.forEach(res => {
                         player2TurnCounter += 1;
                         //Ki Set Up
                         p2KiTotals -= 750;
-                        var P2KiBarWidth = (p2KiTotals / 1200) * 300;
-                        p2Ki.style.width = P2KiBarWidth + "px";
+                        var P2KiBarWidth = (p2KiTotals / 12);
+                        p2Ki.style.width = P2KiBarWidth + "%";
                         kiHeader2.textContent = 'KI ' + p2KiTotals + "/1200";
 
                         //Damage Calculator
@@ -3438,9 +3438,9 @@ rosterObject.fighters.forEach(res => {
                             }, 5000);
                         }
 
-                        var P1HPBarWidth = (p1HPTotals / 1200) * 300;
+                        var P1HPBarWidth = (p1HPTotals / 12);
                         var p1HP = document.getElementById("p1Health");
-                        p1HP.style.width = P1HPBarWidth + "px";
+                        p1HP.style.width = P1HPBarWidth + "%";
                         var hpHeader1 = document.getElementById("hpHeader1");
                         hpHeader1.textContent = 'HP ' + p1HPTotals + "/1200";
 
@@ -3502,8 +3502,8 @@ rosterObject.fighters.forEach(res => {
                         player2TurnCounter += 1;
                         //Ki Set Up
                         p2KiTotals -= 750;
-                        var P2KiBarWidth = (p2KiTotals / 1200) * 300;
-                        p2Ki.style.width = P2KiBarWidth + "px";
+                        var P2KiBarWidth = (p2KiTotals / 12);
+                        p2Ki.style.width = P2KiBarWidth + "%";
                         kiHeader2.textContent = 'KI ' + p2KiTotals + "/1200";
 
                         //Damage Calculator
@@ -3525,9 +3525,9 @@ rosterObject.fighters.forEach(res => {
                             }, 5000);
                         }
 
-                        var P1HPBarWidth = (p1HPTotals / 1200) * 300;
+                        var P1HPBarWidth = (p1HPTotals / 12);
                         var p1HP = document.getElementById("p1Health");
-                        p1HP.style.width = P1HPBarWidth + "px";
+                        p1HP.style.width = P1HPBarWidth + "%";
                         var hpHeader1 = document.getElementById("hpHeader1");
                         hpHeader1.textContent = 'HP ' + p1HPTotals + "/1200";
 
@@ -3595,8 +3595,8 @@ rosterObject.fighters.forEach(res => {
                         //P2 Damage and Ki/Health Adjustments
                         //Ki Set Up
                         p2KiTotals -= 1000;
-                        var P2KiBarWidth = (p2KiTotals / 1200) * 300;
-                        p2Ki.style.width = P2KiBarWidth + "px";
+                        var P2KiBarWidth = (p2KiTotals / 12);
+                        p2Ki.style.width = P2KiBarWidth + "%";
                         kiHeader2.textContent = 'KI ' + p2KiTotals + "/1200";
 
                         //Damage Calculator
@@ -3619,9 +3619,9 @@ rosterObject.fighters.forEach(res => {
                         }
 
 
-                        var P1HPBarWidth = (p1HPTotals / 1200) * 300;
+                        var P1HPBarWidth = (p1HPTotals / 12);
                         var p1HP = document.getElementById("p1Health");
-                        p1HP.style.width = P1HPBarWidth + "px";
+                        p1HP.style.width = P1HPBarWidth + "%";
                         var hpHeader1 = document.getElementById("hpHeader1");
                         hpHeader1.textContent = 'HP ' + p1HPTotals + "/1200";
 
@@ -3682,8 +3682,8 @@ rosterObject.fighters.forEach(res => {
                         //P2 Damage and Ki/Health Adjustments
                         //Ki Set Up
                         p2KiTotals -= 1000;
-                        var P2KiBarWidth = (p2KiTotals / 1200) * 300;
-                        p2Ki.style.width = P2KiBarWidth + "px";
+                        var P2KiBarWidth = (p2KiTotals / 12);
+                        p2Ki.style.width = P2KiBarWidth + "%";
                         kiHeader2.textContent = 'KI ' + p2KiTotals + "/1200";
 
                         //Damage Calculator
@@ -3705,9 +3705,9 @@ rosterObject.fighters.forEach(res => {
                             }, 5000);
                         }
 
-                        var P1HPBarWidth = (p1HPTotals / 1200) * 300;
+                        var P1HPBarWidth = (p1HPTotals / 12);
                         var p1HP = document.getElementById("p1Health");
-                        p1HP.style.width = P1HPBarWidth + "px";
+                        p1HP.style.width = P1HPBarWidth + "%";
                         var hpHeader1 = document.getElementById("hpHeader1");
                         hpHeader1.textContent = 'HP ' + p1HPTotals + "/1200";
 
