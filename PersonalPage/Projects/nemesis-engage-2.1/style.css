@@ -53,8 +53,8 @@ body {
 #p1ImageDiv, #p2ImageDiv {
     display: inline-block;
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 30%;
+    height: 5rem;
     overflow: hidden;
     border: 2px groove #32cd32;
     border-radius: 50%;
